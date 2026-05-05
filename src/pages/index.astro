@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
+import GitHubIcon from '../components/icons/GitHubIcon.astro';
+import SocialIcon from '../components/icons/SocialIcons.astro';
+
+---
+
+<Layout>
+	<main>
+		<section class=" w-250 mx-auto lg:w-\[740px] py-44 ">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-3 pb-5">
+				Hey, soy Joseph <a 
+				href="https://www.linkedin.com/in/joseph-zambrano-188898272/" 
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center "
+				>
+				
+				<Badge>Disponible para trabajar</Badge>
+
+				</a>
+				</div>
+			</h1>
+			<h2 class="text-2xl opacity-80">
+				Estudiante de desarrollo web. De Guayaquil, Ecuador 🇪🇨. <span class="text-purple-300/90">Especializado en crear aplicaciones únicas.</span>
+			</h2>
+
+			<nav class="flex gap-x-2">
+					<SocialIcon href="https://www.linkedin.com/in/joseph-zambrano-188898272/">  
+						<LinkedInIcon class="w-8 h-8"></LinkedInIcon> 
+					</SocialIcon>
+				
+					<SocialIcon href="https://github.com/JosephZambrano">  
+						<GitHubIcon class="w-8 h-8"></GitHubIcon> 
+					</SocialIcon>
+			</nav>
+
+		</section>
+	</main>
+</Layout>
