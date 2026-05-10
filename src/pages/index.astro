@@ -16,6 +16,7 @@ import PythonIcon from '../components/icons/PythonIcon.astro';
 import BookIcon from '../components/icons/BookIcon.astro';
 import TailwindIcon from '../components/icons/TailwindIcon.astro';
 import AstroIcon from '../components/icons/AstroIcon.astro';
+import MaletinIcon from '../components/icons/MaletinIcon.astro';
 ---
 
 <Layout 
@@ -23,12 +24,12 @@ title="Porfolio de Joseph - Desarrollador y Programador Web"
 description="Contrata a Joseph para desarrollar proyectos a futuro.">
 	<main>
 		<Container>
-			<h1 class=" text-white text-5xl font-bold flex flex-row gap-x-8 pb-5 py-16">
+			<h1 id="inicio" class=" text-white text-5xl font-bold flex flex-row gap-x-8 pb-5 py-16">
 				Hey, soy Joseph  <a 
 				href="https://www.linkedin.com/in/joseph-zambrano-188898272/" 
 				target="_blank"
 				rel="noopener"
-				class="flex justify-center items-center hover:scale-110 transition"
+				class="flex justify-center items-center hover:scale-110 transition animate-bounce"
 				> 
 				
 				<Badge>Disponible para trabajar</Badge>
@@ -62,7 +63,7 @@ description="Contrata a Joseph para desarrollar proyectos a futuro.">
 			</h2>
 
 			<div class="flex flex-row gap-x-4 overflow-x-auto ">
-				<HtmlIcon class="size-14 shrink-0" />
+				<HtmlIcon class="size-14 shrink-0 " />
 				<CssIcon class="size-14 shrink-0" />
 				<JsIcon class="size-14 shrink-0" />
 				<PythonIcon class="size-14 shrink-0" />
@@ -79,7 +80,7 @@ description="Contrata a Joseph para desarrollar proyectos a futuro.">
 		<div class="flex justify-center items-center ">
 			<button
 				type="button"
-				class="text-white bg-brand border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-lg font-semibold rounded-full text-xl px-8 py-4 focus:outline-none transition-all duration-300 hover:scale-105"
+				class="text-white bg-white/10 border border-white/10 hover:bg-white/10 -strong focus:ring-4 focus:ring-brand-medium shadow-lg font-semibold rounded-full text-xl px-8 py-4 focus:outline-none transition-all duration-300 hover:scale-105"
 			>
 				<a href="cv.pdf" download>Descargar CV </a>
 			</button>
@@ -87,10 +88,24 @@ description="Contrata a Joseph para desarrollar proyectos a futuro.">
 		</Container>
 
 		<Container>
+			<section>
 			<h2 id="formacion" class=" text-white text-3xl font-bold flex gap-x-2 pb-5 text-anim text-anim.show items-center ">
 				<BookIcon class="size-7" />Formación
 			</h2>
+			
 			<Experiencia></Experiencia>
+			</section>
+
 		</Container>
+
+		<Container>
+			<section>
+			<h2 id="proyectos" class=" text-white text-3xl font-bold flex gap-x-2 pb-5 text-anim text-anim.show items-center ">
+				<MaletinIcon class="size-7" />Proyectos
+			</h2>
+			
+			</section>
+		</Container>
+
 	</main>
 </Layout>
