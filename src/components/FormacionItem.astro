@@ -1,0 +1,47 @@
+---
+export interface Props {
+    title: string;
+    date: string;
+    institucion: string;
+    description: string;
+
+}
+
+const { title, date, institucion, description } = Astro.props;
+---
+<div class="absolute w-3 h-3 bg-neutral-quaternary rounded-full mt-1.5 -inset-s-1.5 border border-buffer"></div>
+
+<time class="text-xl font-semibold leading-none text-white/80">
+  <span class="text-anim">{date}</span>
+</time>
+
+<h2 class="text-xl font-medium text-white/90">
+  <span class="text-anim">{institucion}</span>
+</h2>
+
+<h3 class="text-2xl font-semibold text-white/90 my-2">
+  <span class="text-anim">{title}</span>
+</h3>
+
+<p class="mb-4 text-lg font-normal text-white/70">
+  <span class="text-anim">{description}</span>
+</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elementos = document.querySelectorAll(".text-anim");
+
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".text-anim").forEach(el => {
+  observer.observe(el);
+    });
+  });   
+
+</script>

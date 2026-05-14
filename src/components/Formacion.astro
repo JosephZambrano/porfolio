@@ -1,0 +1,44 @@
+---
+import FormacionItem from "./FormacionItem.astro"
+
+
+const FORMACION = [
+    {
+        date: '2022-2024',
+        title: 'Tecnologo Superior en Desarrollo de Software',
+        institucion: 'Instituto Superior Tecnologico ARGOS',
+        description:
+            'Formación técnica orientada al diseño, desarrollo e implementación de aplicaciones de software. Con conocimientos en programación, bases de datos, desarrollo web y buenas prácticas de desarrollo, enfocado en crear soluciones funcionales y eficientes.',
+        
+    },
+    {
+        date: 'En curso',
+        title: 'Ingeniero en Sistemas Inteligentes',
+        institucion: 'Universidad Tecnológica ECOTEC',
+        description:
+            'Formación profesional en curso enfocada en el análisis, diseño y gestión de sistemas informáticos. Desarrollo de habilidades en arquitectura de software, gestión de proyectos, redes, seguridad y optimización de procesos tecnológicos.',
+        
+    },
+    {
+        date: '2023',
+        title: 'Certificado de Ingles A2',
+        institucion: 'Rosetta Stone',
+        description:
+            'Nivel de Inglés A2 del Marco Común Europeo de Referencia para las Lenguas (MCER).',
+        
+    }
+]
+---
+
+
+<ol class="relative border-s border-default">
+   {
+  FORMACION.map(formacion => (
+    <li class="mb-20 ms-4">
+      <FormacionItem {...formacion} />
+    </li>
+  ))
+}
+    
+</ol>
+

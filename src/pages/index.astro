@@ -5,7 +5,7 @@ import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
 import GitHubIcon from '../components/icons/GitHubIcon.astro';
 import SocialIcon from '../components/icons/SocialIcons.astro';
 import GmailIcon from '../components/icons/GmailIcon.astro';
-import Experiencia from '../components/Experiencia.astro';
+import Formacion from '../components/Formacion.astro';
 import Container from '../components/Container.astro';
 import HtmlIcon from '../components/icons/HtmlIcon.astro';
 import CssIcon from '../components/icons/CssIcon.astro';
@@ -17,6 +17,7 @@ import BookIcon from '../components/icons/BookIcon.astro';
 import TailwindIcon from '../components/icons/TailwindIcon.astro';
 import AstroIcon from '../components/icons/AstroIcon.astro';
 import MaletinIcon from '../components/icons/MaletinIcon.astro';
+import Experiencia from '../components/Experiencia.astro';
 ---
 
 <Layout 
@@ -24,7 +25,7 @@ title="Porfolio de Joseph - Desarrollador y Programador Web"
 description="Contrata a Joseph para desarrollar proyectos a futuro.">
 	<main>
 		<Container>
-			<h1 id="inicio" class=" text-white text-5xl font-bold flex flex-row gap-x-8 pb-5 py-16">
+			<h1 id="inicio" class="text-white text-5xl font-bold flex flex-row gap-x-8 pb-5 py-16">
 				Hey, soy Joseph  <a 
 				href="https://www.linkedin.com/in/joseph-zambrano-188898272/" 
 				target="_blank"
@@ -37,7 +38,7 @@ description="Contrata a Joseph para desarrollar proyectos a futuro.">
 				</a>
 				
 			</h1>
-			<h2 class="text-2xl opacity-80">
+			<h2 class="text-2xl opacity-80 text-white">
 				Estudiante de desarrollo web. De Guayaquil, Ecuador 🇪🇨. <span class="text-purple-300/90">Especializado en crear aplicaciones únicas.</span>
 			</h2>
 
@@ -93,17 +94,24 @@ description="Contrata a Joseph para desarrollar proyectos a futuro.">
 				<BookIcon class="size-7" />Formación
 			</h2>
 			
-			<Experiencia></Experiencia>
+			<Formacion></Formacion>
 			</section>
 
 		</Container>
 
 		<Container>
 			<section>
-			<h2 id="proyectos" class=" text-white text-3xl font-bold flex gap-x-2 pb-5 text-anim text-anim.show items-center ">
-				<MaletinIcon class="size-7" />Proyectos
+				<div>
+			<h2 id="experiencia" class=" text-white text-3xl font-bold flex gap-x-2 pb-5 text-anim text-anim.show items-center ">
+				<MaletinIcon class="size-7" />Experiencia
 			</h2>
+				</div>
 			
+			<div class="flex flex-col gap-y-4 text-anim text-anim.show">
+				
+			<Experiencia></Experiencia>
+			</div>
+
 			</section>
 		</Container>
 
